@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagasol's Group </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+<link rel="stylesheet" href="css/style.css">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+            <div class="hero">
+                <h1>Welcome to <span class="spanst"> comfood!</span> </h1>
+                <h2>please <span class="spans"> log in</span> to continue</h2>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btnsk"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                    </div>
+                    <div class="social-icons">
+                        <i class='bx bxl-google google'></i>
+                        <i class='bx bxl-facebook-circle facebook' ></i>
+                        <i class='bx bxl-linkedin linkedin' ></i>
+                    </div>
+                    <form id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox"  class="check-box"><span>Remember Password</span>
+                        <button type="sumbit" class="submit-btn"><a href="ordering system.html"> Log In</a></button>
+                    </form>
+                    <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="email" class="input-field" placeholder="Email Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox"  class="check-box"><span>I agree to the terms & conditions
+                        </span>
+                        <button type="sumbit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+                
+            </div>
+
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btnsk");
+
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "110px";
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "0px";
+                }
+
+            </script>
+        </body>
+</html>
